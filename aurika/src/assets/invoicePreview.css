@@ -140,7 +140,7 @@
   
   .column {
     display: inline-block;
-    width: 49%;
+    width: 100%;
     vertical-align: top;
     margin-bottom: 20px;
   }
@@ -160,6 +160,7 @@
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+    font-size: 12px; /* Adjusted font size for print */
   }
   
   .items-table th {
@@ -187,6 +188,7 @@
     font-size: 12px;
   }
 }
+
 .pdf-buttons {
   margin-top: 20px;
   text-align: center;
