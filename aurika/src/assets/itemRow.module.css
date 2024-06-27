@@ -1,0 +1,11 @@
+/* itemRow.module.css */
+
+.row {
+    text-align: center;
+  }
+  
+  .row td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  

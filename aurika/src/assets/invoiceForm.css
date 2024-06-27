@@ -1,0 +1,113 @@
+/* assets/invoiceForm.css */
+
+.invoice-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f77c7c;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-form div {
+  margin-bottom: 20px;
+}
+
+.invoice-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.invoice-form input[type="text"],
+.invoice-form input[type="number"],
+.invoice-form input[type="date"] {
+
+  width: calc(100% - 16px); /* Adjust for padding */
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.invoice-form input[type="text"]:focus,
+.invoice-form input[type="number"]:focus,
+.invoice-form input[type="date"]:focus {
+  background-color: #232121;
+  color: wheat;
+  outline: none;
+  border-color: #4d90fe;
+  box-shadow: 0 0 8px rgba(77, 144, 254, 0.6);
+}
+
+.invoice-form .soldBy,
+.invoice-form .billingAddress,
+.invoice-form .docs,
+.invoice-form .shippingAddress,
+.invoice-form .orderDetails,
+.invoice-form .invoiceDetails,
+.invoice-form .items {
+  padding: 20px;
+  background-color: #a6e663;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-form .docs > div {
+  display: inline-block;
+  width: 48%;
+}
+
+.invoice-form .items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.invoice-form .items label,
+.invoice-form .items input {
+  margin-bottom: 12px;
+}
+
+.invoice-form button {
+  margin-left: 10px;
+  background-color: #4d90fe;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.invoice-form button:hover {
+  background-color: #357ae8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.signatureCanvas {
+  border: 1px solid #000;
+  width: 100%;
+  height: 200px;
+}
+/* Media Queries */
+@media (max-width: 600px) {
+  .invoice-form {
+    padding: 16px;
+  }
+
+  .invoice-form .soldBy,
+  .invoice-form .billingAddress,
+  .invoice-form .docs,
+  .invoice-form .shippingAddress,
+  .invoice-form .orderDetails,
+  .invoice-form .invoiceDetails,
+  .invoice-form .items {
+    padding: 16px;
+  }
+}
