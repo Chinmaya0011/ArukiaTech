@@ -21,12 +21,12 @@
 }
 
 .invoice-logo {
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 150px;
 }
 
 .invoice-title {
-  font-size: 24px;
+  font-size: 18px;
   margin-left: 20px;
 }
 
